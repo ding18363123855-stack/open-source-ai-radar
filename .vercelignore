@@ -1,0 +1,12 @@
+.git
+.venv
+.local
+.env*
+dist
+reports
+tests
+web/node_modules
+web/.astro
+*.local.log
+**/*.local.json
+data/*.db*

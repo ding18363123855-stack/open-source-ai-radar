@@ -75,12 +75,12 @@ function ownerInitials(fullName: string): string {
 }
 ---
 
-<Layout title="Home" description="Discover what is becoming important in open-source AI. Velocity scoring, momentum tracking, breakout detection for 9,000+ projects." canonical="/open-source-ai-radar/"
+<Layout title="Home" description="Discover what is becoming important in open-source AI. Velocity scoring, momentum tracking, breakout detection for 9,000+ projects." canonical={base}
   jsonLd={{
     "@context": "https://schema.org",
     "@type": "WebSite",
     "name": "Open Source AI Radar",
-    "url": "https://erbharatmalhotra.github.io/open-source-ai-radar/",
+    "url": new URL(base, Astro.site).href,
     "description": "Discover what is becoming important before everyone else does."
   }}>
 
