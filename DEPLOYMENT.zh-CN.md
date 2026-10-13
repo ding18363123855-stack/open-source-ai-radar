@@ -3,7 +3,9 @@
 上游：ErBharatMalhotra/open-source-ai-radar，MIT 许可。
 安装使用的上游提交：`60d3dcb94ee4dceb786eb8f094cae6137d517eb4`。
 
-- 云端：https://open-source-ai-radar.vercel.app/
+- GitHub 仓库：https://github.com/ding18363123855-stack/open-source-ai-radar
+- GitHub Pages：https://ding18363123855-stack.github.io/open-source-ai-radar/
+- Vercel 云端：https://open-source-ai-radar.vercel.app/
 - Vercel：`dingbei/open-source-ai-radar`，Hobby 免费套餐。
 - 本机：http://127.0.0.1:4321/
 - 本机启动：在项目目录运行 `powershell -File scripts/start-local.ps1`
@@ -40,4 +42,5 @@ Linux 云端从 GitHub 构建可以保留全部路径。
 
 初次直接上传大量文件时，本机 Vercel CLI 出现内存不足。
 `scripts/package-vercel.py` 使用 Git 原始树和明确列出的部署修改生成压缩包，保留全部大小写路径，避免上传本机私有文件。
-这仅是备用发布方式；目标是通过自己的 GitHub 仓库连接 Vercel，推送后自动构建。
+GitHub Pages 已从本仓库 main 分支成功构建并发布。修改站点、脚本或数据后推送，已有 Deploy Website 工作流会自动更新 Pages。
+Vercel 初次发布成功；其 GitHub 仓库关联仍需在 Vercel 中完成对应账号及仓库访问授权。

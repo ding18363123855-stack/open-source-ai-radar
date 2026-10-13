@@ -56,11 +56,7 @@ jobs:
         run: npm run build
 
       - name: Copy API files to dist
-        run: |
-          if [ -d data/exports/api ]; then
-            cp -r data/exports/api dist/api
-            echo "Copied API files to dist/api"
-          fi
+        run: node scripts/copy-api.mjs
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
